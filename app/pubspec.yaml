@@ -124,6 +124,9 @@ flutter:
           weight: 700
 
   assets:
+    # DSH Relay 自建 CA：安装到 HttpOverrides.global 以信任自签名中继证书
+    # （lib/remote/relay_trust.dart）。
+    - assets/tls/dsh-relay-ca.crt
     # Full upstream WebRTC Android release notices, shown by LicenseRegistry.
     - assets/licenses/webrtc-150.7871.04.md
     # Phone layout for the embedded DSH Web (see lib/ui/web/web_view_page.dart).
