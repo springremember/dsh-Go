@@ -49,7 +49,7 @@ jobs:
           cache: true
 
       - name: 构建 arm64 运行时（Ubuntu Base + Node + DSH）
-        run: ./runtime/build-runtime.sh arm64
+        run: ./runtime/build-runtime.sh arm64-v8a
 
       - name: 构建 APK（arm64, release, debug 签名）
         run: ./tooling/build-apk.sh -f arm64 --build-name 1.0.8-selfsigned
