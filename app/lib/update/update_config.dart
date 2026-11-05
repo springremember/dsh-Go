@@ -21,7 +21,9 @@
 library;
 
 /// GitHub repository the releases live in.
-const updateRepo = 'ccch1mneyyy/dsh-go';
+/// 指向自己的 fork：本构建带自建中继 CA，官方 Release 签名/内容都不同，
+/// 更新必须以自建仓库为准。
+const updateRepo = 'springremember/dsh-Go';
 
 /// `releases/latest` of the REST API: tag, notes, assets with sizes and
 /// SHA-256 digests. Unauthenticated: 60 requests per hour per IP.
